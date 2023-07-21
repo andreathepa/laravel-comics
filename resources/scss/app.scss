@@ -9,6 +9,10 @@
 
 header{
     margin: 0 auto;
+
+    nav{
+        color: black;
+    }
 }
 
 .jumbotron{
@@ -26,4 +30,26 @@ header{
         object-fit: cover;
         
     }
-}   
+}
+
+
+.button_load{
+    padding: 15px;
+    background-color: rgb(59, 59, 228);
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+
+    a{
+        color: white;
+    }
+}
+
+.button_load:hover{
+    background-color: rgb(0, 140, 255);
+
+    a{
+        color: black;
+    }
+}

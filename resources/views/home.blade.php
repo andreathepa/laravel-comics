@@ -16,6 +16,23 @@
 <body>
     @include('partials.header')
     @include('partials.jumbo')
+
+    <div>
+        <div class="container">
+            <div class="row">
+                @foreach($comics as $comic)
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0">
+                        <img class="img-fluid card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        <div class="button_load">
+            <a>LOAD MORE</a>
+        </div>
+    </div>
    
 </body>
 
