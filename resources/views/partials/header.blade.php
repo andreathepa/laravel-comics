@@ -11,17 +11,64 @@
 </head>
 
 <body>
-    <header class="container my-2">
-            <div class="flex justify-content-between align-items-center">
-                <img src="{{ Vite::asset('resources/img/dc-logo.png')}}">
-                <nav>
-                    <ul>
-                        
-                    </ul>
-                </nav>
+    <header class="container my-4">
+        <div class="row">
+            <div class="col-1">
+                <div class="d-flex justify-content-center">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png')}}">
+
+                </div>
 
             </div>
+            <div class="col">
+                <div class="nav d-flex justify-content-center my-3">
+                    <ul class="list-unstyled d-flex justify-content-center text-uppercase">
+                        
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                Comics
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                Games
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                Movies
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                News
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="/">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <div class="input-group rounded">
+                                <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                            </div>
+                        </li>
+            
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
     </header>
+
+    
    
 </body>
 
