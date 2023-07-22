@@ -17,13 +17,14 @@
     @include('partials.header')
     @include('partials.jumbo')
 
-    <div>
-        <div class="container">
+    <main>
+        <div class="container my-4">
             <div class="row">
                 @foreach($comics as $comic)
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card border-0">
-                        <img class="img-fluid card-img-top" src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
+                <div class="col-10 col-md-6 col-lg-2">
+                    <div class="card border-0 my-3">
+                        <img class="img-fluid card-img-top img-comic" src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
+                        <i class="my-2 text-uppercase">{{ $comic['title'] }}</i>
                     </div>
                 </div>
                 @endforeach
@@ -32,7 +33,21 @@
         <div class="button_load">
             <a>LOAD MORE</a>
         </div>
-    </div>
+
+        <div class="container_icons">
+            <div class="footer_blue flex justify-content-between align-items-center">
+                @foreach($icons as $icon)
+
+                 <a class="flex align-items-center margin-left">
+
+                    <div class="image_icon"><img src="{{ $icon['icona'] }}" alt="{{ $icon['title']}}"></div>
+                 </a>
+
+                 @endforeach
+
+            </div>
+        </div>
+    </main>
    
 </body>
 
