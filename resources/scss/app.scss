@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 header{
     margin: 0 auto;
 
@@ -57,5 +61,13 @@ header{
 
     a{
         color: black;
+    }
+}
+
+.image_icon{
+    width: 60px;
+
+    img{
+        width: 60px;
     }
 }
