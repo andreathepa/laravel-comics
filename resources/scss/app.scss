@@ -1,73 +1,174 @@
+// Import the Bootstrap SCSS library.
 @import '~bootstrap/scss/bootstrap';
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+// Global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-header{
-    margin: 0 auto;
+// Header styles
+header {
+  margin: 0 auto;
 
-    nav{
-        color: black;
-    }
+  nav {
+    color: black;
+  }
 }
 
-.jumbotron{
-    position: relative;
-    overflow: hidden;
+// Jumbotron styles
+.jumbotron {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50vh;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 50vh;
-
-    img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 200%;
-        object-fit: cover;
-        
-    }
+    height: 200%;
+    object-fit: cover;
+  }
 }
 
-
-.img-comic{
-    aspect-ratio: 3/4;
+// Image aspect ratio style
+.img-comic {
+  aspect-ratio: 3/4;
 }
 
+// Load button styles
+.button_load {
+  padding: 15px;
+  background-color: rgb(55, 103, 207);
+  width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+  color: white;
 
-.button_load{
-    padding: 15px;
-    background-color: rgb(55, 103, 207);
-    width: 250px;
-    text-align: center;
-    margin: 0 auto;
-    cursor: pointer;
+  a {
     color: white;
-
-    a{
-        color: white;
-    }
+  }
 }
 
-.button_load:hover{
-    background-color: rgb(0, 140, 255);
+.button_load:hover {
+  background-color: rgb(0, 140, 255);
 
-    a{
-        color: black;
-    }
+  a {
+    color: black;
+  }
 }
 
-.image_icon{
+// Image icon styles
+.image_icon {
+  width: 60px;
+
+  img {
     width: 60px;
+  }
+}
 
-    img{
-        width: 60px;
+// Footer styles
+.footer_bg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 60vh;
+  color: white;
+
+  .bg_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+  }
+
+  .bg_logo {
+    height: 604px;
+    position: absolute;
+    top: -46px;
+    right: 287px;
+  }
+}
+
+.list_footer {
+  z-index: 200;
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  display: flex;
+  text-transform: uppercase;
+
+  ul {
+    margin-bottom: 50px;
+    margin-right: 50px;
+  }
+
+  ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  li:hover {
+    background-color: rgba(255, 255, 255, 0.322);
+  }
+}
+
+// Container sign-up styles
+.container_sign_up {
+  background-color: rgb(37, 37, 37);
+
+  .sign_up {
+    height: 100px;
+    margin: 0 auto;
+    max-width: 1320px;
+
+    .button_sign {
+      padding: 15px;
+      border: 1px solid blue;
+      cursor: pointer;
+      background-color: rgb(37, 37, 37);
+      color: white;
     }
+  }
+
+  .button_sign:hover {
+    background-color: rgb(58, 58, 218);
+  }
+
+  .follow {
+    font-size: 25px;
+    font-weight: 600;
+
+    a {
+      color: rgb(0, 89, 255);
+    }
+
+    a:hover {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid rgb(255, 255, 255);
+  }
+
+  ul li {
+    display: inline-block;
+    padding: 30px 20px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.205);
+    }
+  }
 }
