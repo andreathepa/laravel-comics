@@ -1,26 +1,29 @@
     @extends('layout.app')
 
     @section('content')
-        <div class="container my-5">
-            <div class="row">
-                @foreach($comics as $comic)
-                <div class="col-10 col-md-6 col-lg-2">
-                    <div class="card bg-transparent border-0 my-3 pointer">
-                        <img class="img-fluidcard-img-top img-comic" src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
-                        <i class="my-2 text-uppercase text-white">{{ $comic['title'] }}</i>
+        <div class="container-fluid bg-dark">
+            <div class="container py-5">
+                <div class="row">
+                    @foreach($comics as $comic)
+                    <div class="col-10 col-md-6 col-lg-2">
+                        <div class="card bg-transparent border-0 my-3 pointer">
+                            <img class="img-fluidcard-img-top img-comic" src="{{ $comic['thumb'] }}" alt="{{ $comic['title']}}">
+                            <i class="my-2 text-uppercase text-white">{{ $comic['title'] }}</i>
+                        </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
+                <div class="button_load p-3">
+                    <a>LOAD MORE</a>
+                </div>
             </div>
-        </div>
-        <div class="button_load">
-            <a>LOAD MORE</a>
+
         </div>
 
-        <div class="container-fluid mt-5 bg-primary bg-gradient">
+        <div class="container-fluid py-5 bg-primary bg-gradient">
             <div class="row">
                 <div class="col">
-                    <div class="container p-5">
+                    <div class="container">
                         <div class="row">
                             <div class="col">
                                 <ul class="d-flex align-items-center">

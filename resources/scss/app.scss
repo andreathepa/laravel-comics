@@ -8,9 +8,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: black;
-}
 
 a{
   text-decoration: none;
@@ -180,4 +177,10 @@ header {
       background-color: rgba(255, 255, 255, 0.205);
     }
   }
+}
+
+
+
+.show-image{
+  width: 140px;
 }
