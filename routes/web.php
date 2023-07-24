@@ -22,6 +22,8 @@ Route::get('/', function () {
 
 })->name('home');
 
+
+
 Route::get('/products', function () {
 
     $comics = config('db.comics');
@@ -31,12 +33,15 @@ Route::get('/products', function () {
 
 })->name('products');
 
+
+
+
 Route::get('/products/{product}', function ($id) {
 
     $comics = config('db.comics');
 
-    $product = $products[$id];
+    $comic = $comics[$id];
 
-    return view('products.show', compact('product'));
+    return view('products.show', compact('comic'));
 
-});
+})->name('products.show');;
