@@ -12,6 +12,10 @@ body {
   background-color: black;
 }
 
+a{
+  text-decoration: none;
+}
+
 // Header styles
 header {
   margin: 0 auto;
@@ -39,6 +43,11 @@ header {
 }
 
 // Image aspect ratio style
+
+.pointer{
+  cursor: pointer;
+}
+
 .img-comic {
   aspect-ratio: 3/4;
 }

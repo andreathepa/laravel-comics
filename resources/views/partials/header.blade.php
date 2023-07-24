@@ -12,15 +12,18 @@
 
 <body>
 
-    <div class="container-fluid bg-primary p-2"></div>
+    <div class="container-fluid bg-primary p-2">
+        
+    </div>
     <header class="container-fluid bg-white">
 
         <div class="container p-3">
             <div class="row">
                 <div class="col-2">
                     <div class="d-flex justify-content-center">
-                        <img src="{{ Vite::asset('resources/img/dc-logo.png')}}">
-    
+                        <a href="">
+                            <img src="{{ Vite::asset('resources/img/dc-logo.png')}}">
+                        </a>
                     </div>
     
                 </div>
