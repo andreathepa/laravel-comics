@@ -32,13 +32,13 @@
                         <ul class="list-unstyled d-flex justify-content-center text-uppercase">
                             
                             <li class="nav-item mx-2">
-                                <a class="nav-link {{ Route::currentRouteName() === 'homepage' ? 'fw-bold' : '' }}" href="/">
+                                <a class="nav-link {{ Route::currentRouteName() === 'home' ? 'fw-bold' : '' }}" href="{{ route('home')}}">
                                     Homepage
                                 </a>
                             </li>
                             <li class="nav-item mx-2">
-                                <a class="nav-link {{ Route::currentRouteName() === 'link' ? 'fw-bold' : '' }}" href="/">
-                                    Comics
+                                <a class="nav-link {{ Route::currentRouteName() === 'products' ? 'fw-bold' : '' }}" href="{{ route('products')}}">
+                                    Products
                                 </a>
                             </li>
                             <li class="nav-item mx-2">

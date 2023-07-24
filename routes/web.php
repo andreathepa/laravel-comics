@@ -20,4 +20,23 @@ Route::get('/', function () {
 
     return view('home', compact('comics','icons'));
 
-})->name('homepage');
+})->name('home');
+
+Route::get('/products', function () {
+
+    $comics = config('db.comics');
+
+
+    return view('products.index', compact('comics'));
+
+})->name('products');
+
+Route::get('/products/{product}', function ($id) {
+
+    $comics = config('db.comics');
+
+    $product = $products[$id];
+
+    return view('products.show', compact('product'));
+
+});
