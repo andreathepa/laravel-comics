@@ -106,13 +106,7 @@
                         </div>
                         <div class="d-flex align-items-center">
                             <div class="follow"><a href="">FOLLOW US</a></div>
-                            <ul>
-                                <li v-for="(social, index) in socials" :key="index">
-                                    <a :href="social.href" :active="social.active ? 'active' : ''">
-                                        <div><img :src="social.logo_social" alt=""></div>
-                                    </a>
-                                </li>
-                            </ul>
+                            
                         </div>
                 </div> 
         
